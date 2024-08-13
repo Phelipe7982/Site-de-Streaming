@@ -1,0 +1,321 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+/* Header */
+.hero_area {
+  height: calc(100vh - 30px);
+  background: linear-gradient(to right, #ffffff 55%, #ffffff 55%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  color: rgb(0, 0, 0);
+}
+
+.header_section {
+  background-color: #5E0B4D;
+}
+
+.header_section .user_option a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  padding: 10px 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* efeito stroke na navbar */
+.nav-link, .nav-link:after, .nav-link:before {
+  transition: all .5s;
+}
+
+.nav-link:hover {
+  color:#ffffff;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #ffffff;
+  height: 1px;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
+
+.nav-link {
+  transition: all 1s;
+}
+
+.nav-link:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+.nav-link:hover {
+  color: #ffffff;
+  z-index: 1;
+}
+.nav-link:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/* Span da logo */
+.navbar-brand span {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce; 
+  animation-duration: 3s;
+  cursor: pointer;
+}
+
+/* Botão do usuário (login) */
+#btn-user, #btn-user:focus {
+  background-color: #5E0B4D;
+  color: white;
+  border: 1.5px solid white;
+  width: 4.5%;
+  text-align: center;
+  display: flex;
+  justify-items: center;
+  box-shadow: none;
+}
+
+#btn-user:hover {
+  background-color: white;
+  color: #5E0B4D;
+  border: none;
+  transition: 0.6s;
+}
+
+/* Carrossel */
+.slider_section {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border: 5px solid rgb(253, 0, 253);
+}
+
+.slider_section .detail-box h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10%;
+}
+
+.slider_section .detail-box p {
+  margin-top: 15px;
+}
+
+.slider_section .img-container .img-box img {
+  width: 100%;
+}
+
+.slider_section #carouselExampleIndicators {
+  position: unset;
+  width: 100%;
+}
+
+.slider_section .carousel_btn-container {
+  width: 120px;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  left: 8.5%;
+  z-index: 999;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  top: 65%;
+}
+
+.slider_section .carousel_btn-container .carousel-control-prev,
+.slider_section .carousel_btn-container .carousel-control-next {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 100%;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: center;
+  background-color: #99187f;
+  margin: 2px;
+  text-decoration: none;
+}
+
+.slider_section .carousel_btn-container .carousel-control-prev:hover,
+.slider_section .carousel_btn-container .carousel-control-next:hover {
+  background-color: #ffffff;
+  color: #5E0B4D;
+  border: solid 2px #5E0B4D;
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+
+.slider_section ol.carousel-indicators {
+  margin: 0;
+  width: 75px;
+  bottom: 45px;
+  left: initial;
+  right: 25px;
+}
+
+.slider_section ol.carousel-indicators li {
+  border-radius: 100%;
+  text-indent: 0px;
+  text-align: center;
+  line-height: 55px;
+  color: #1a2e35;
+  background-color: transparent;
+  opacity: 1;
+  display: none;
+}
+
+.slider_section ol.carousel-indicators li.active {
+  display: block;
+}
+
+/* Footer */
+.info_section {
+  position: relative;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.info_section .info_top .info_logo span {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.info_section .info_contact .link-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 30px 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.info_section .info_contact .link-box .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 45px;
+  min-height: 45px;
+  margin-right: 20px;
+}
+
+.info_section .info_contact .link-box .img-box img {
+  width: auto;
+  height: auto;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+/* CONFIG PÁG. INICIAL */
+
+/* Área de Planos */
+.plans_section {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border: 5px solid purple;
+}
+
+.plans_section h1 {
+  text-align: center;
+  margin: 60px 0;
+  font-size: 40px;
+  color: purple;
+}
+
+
+.contain_plano img {
+  width: 599px;
+  height: 380px;
+}
+
+.contain_plano {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+/* CONFIG PÁG. CADASTRO */
+#span-cadastro {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 35%;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+

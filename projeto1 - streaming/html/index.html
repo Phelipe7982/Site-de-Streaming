@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="streaming, filmes, séries, norphub, plano"/>
+  <title>Projeto 1</title>
+  <script defer src="../js/script.js"></script>
+  <link href="../css/style.css" rel="stylesheet" />
+  <!-- Link do bootstrap interno no arquivo -->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+  <!-- Link do bootstrap externo -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Link para os ícones no google icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <div class="navbar-brand" href="./index.html">
+            <!-- <img src="../images/logo.png" alt="" /> -->
+            <span class="logo-name">
+              NorpHub
+            </span>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><img src="../images/menu.png" alt="menu icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Categorias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nossos planos </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Sobre nós </a>
+              </li>
+            </ul>
+            <div class="btn-group dropstart">
+              <button id="btn-user" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="material-symbols-outlined">
+                      person
+                      </span>
+              </button>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item disabled" aria-disabled="true" style="color: rgb(163, 156, 151);">Minha Conta</a></li>
+                  <li><a class="dropdown-item disabled" aria-disabled="true" style="color: rgb(163, 156, 151);">Meus Planos</a></li>
+                  <li><a class="dropdown-item" href="./register.html">Entrar</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sair</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="hero_area">
+    <section class="slider_section ">
+      <div class="carousel_btn-container">
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="material-symbols-outlined">
+            arrow_back
+            </span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="material-symbols-outlined">
+            arrow_forward
+            </span>
+        </a>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-5 offset-md-1">
+                  <div class="detail-box">
+                    <h1>
+                      Título <br/><br/>
+                      Subtítulo
+                    </h1>
+                    <p>
+                      Textooooooo
+                    </p>
+                  </div>
+                </div>
+                <div class="offset-md-1 col-md-4 img-container">
+                  <div class="img-box">
+                    <img src="../images/img-teste.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-5 offset-md-1">
+                  <div class="detail-box">
+                    <h1>
+                      Título  <br/><br/>
+                      Subtítulo
+                    </h1>
+                    <p>
+                      Textoooooo
+                    </p>
+                    <div class="btn-box">
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-md-1 col-md-4 img-container">
+                  <div class="img-box">
+                    <img src="../images/img-teste.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-5 offset-md-1">
+                  <div class="detail-box">
+                    <h1>
+                      Título <br/><br/>
+                      Subtítulo
+                    </h1>
+                    <p>
+                      Textooooo
+                    </p>
+                    <div class="btn-box">
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-md-1 col-md-4 img-container">
+                  <div class="img-box">
+                    <img src="../images/img-teste.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Segunda section (planos) -->
+    
+  </div>
+
+  
+
+  <!-- Rodapé -->
+  <section class="info_section ">
+    <div class="info_container layout_padding-top">
+      <div class="container">
+        <div class="info_top">
+          <div class="info_logo">
+            <!-- <img src="../images/logo.png" alt="" /> -->
+            <span>
+              Nosso Streaming - Rodapé
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9 col-md-10 mx-auto">
+            <div class="info_contact layout_padding2">
+              <div class="row">
+                <div class="col-md-3">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="../images/location.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        Localização
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="../images/mail.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        fodase@teupai.br
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-5">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="../images/call.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        Contato: +55 21 99999-9999
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</body>
+</body>
+
+</html>
